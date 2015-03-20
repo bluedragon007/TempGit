@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <ImageView
+        android:id="@+id/BEACON_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/BEACON_uuid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/BEACON_img"
+        android:text="UUID" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_uuid"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BEACON_img"
+        android:text="MAJOR" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_minor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_uuid"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BEACON_major"
+        android:text="MINOR" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_major"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BEACON_img"
+        android:gravity="left|top"
+        android:text="PROXIMITY" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_major"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BEACON_proximity"
+        android:text="RSSI" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_txpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_major"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/BEACON_rssi"
+        android:text="TXPOWER" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/BEACON_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BEACON_proximity"
+        android:layout_toRightOf="@+id/BEACON_img"
+        android:text="RANGE" />
+
+</RelativeLayout>

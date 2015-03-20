@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6FFF"
+    android:padding="15dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/profilepic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilepic"
+            android:text="Rio"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7879787978"
+            android:textColor="#FFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/latlongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lat longs:"
+            android:textColor="#FFF"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</RelativeLayout>
